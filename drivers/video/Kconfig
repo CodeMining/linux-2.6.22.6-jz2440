@@ -1739,6 +1739,19 @@ config FB_S3C2410
 	  say M here and read <file:Documentation/kbuild/modules.txt>.
 
 	  If unsure, say N.
+
+choice
+        prompt "LCD SCREEN SIZE"
+        depends on FB && ARCH_S3C2410
+        default CONFIG_SMDK2440_LCD4.3
+        help
+          Choose which size of LCD screen
+        config CONFIG_SMDK2440_LCD4.3
+          bool "4.3 size of LCD screen"
+        config CONFIG_SMDK2440_LCD3.5
+          bool "3.5 size of LCD screen"
+endchoice
+
 config FB_S3C2410_DEBUG
 	bool "S3C2410 lcd debug messages"
 	depends on FB_S3C2410

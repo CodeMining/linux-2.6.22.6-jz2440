@@ -19,5 +19,5 @@ obj-$(CONFIG_S3C2440_DMA)	+= dma.o
 obj-$(CONFIG_MACH_ANUBIS)	+= mach-anubis.o
 obj-$(CONFIG_MACH_OSIRIS)	+= mach-osiris.o
 obj-$(CONFIG_MACH_RX3715)	+= mach-rx3715.o
-obj-$(CONFIG_ARCH_S3C2440)	+= mach-smdk2440.o
+obj-$(CONFIG_ARCH_S3C2440)	+= LCD_mach-smdk2440.o
 obj-$(CONFIG_MACH_NEXCODER_2440) += mach-nexcoder.o
